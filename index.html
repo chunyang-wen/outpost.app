@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="Outpost is a macOS network monitor for per-app connections, bandwidth history, and Wi-Fi and Ethernet usage.">
+  <meta property="og:title" content="Outpost — Network Monitor for Mac">
+  <meta property="og:description" content="See which apps are online, where they connect, and how much data they use.">
+  <meta property="og:type" content="website">
+  <title>Outpost — Network Monitor for Mac</title>
+  <link rel="icon" type="image/png" href="assets/outpost.png">
+  <link rel="preload" href="assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Outpost home">
+        <img src="assets/outpost.png" alt="" width="38" height="38">
+        <span>Outpost</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#requirements">Requirements</a>
+        <a class="nav-releases" href="https://github.com/chunyang-wen/Outpost.app/releases">Releases</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Network monitor for Mac</p>
+          <h1 id="hero-title">See where your&nbsp;Mac <span>connects.</span></h1>
+          <p class="hero-description">Inspect per-app connections, browse bandwidth history, and track your network usage.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://github.com/chunyang-wen/Outpost.app/releases">View releases</a>
+            <a class="text-link" href="#features">Explore features</a>
+          </div>
+          <p class="system-note">macOS 15 or later <span aria-hidden="true">·</span> Apple silicon and Intel</p>
+        </div>
+
+        <div class="product-preview" aria-label="Outpost screenshots">
+          <div class="preview-stage">
+            <div class="preview-window">
+              <figure id="bandwidth-panel" role="tabpanel" aria-labelledby="bandwidth-tab">
+                <img src="assets/bandwidth.webp" width="1920" height="1244" alt="Outpost showing hourly sent and received traffic for a selected app, with a breakdown by destination." fetchpriority="high">
+              </figure>
+              <figure id="connections-panel" role="tabpanel" aria-labelledby="connections-tab" hidden>
+                <img src="assets/connections.webp" width="1920" height="1244" alt="Outpost showing active connections grouped by application and process." loading="lazy">
+              </figure>
+              <figure id="destinations-panel" role="tabpanel" aria-labelledby="destinations-tab" hidden>
+                <img src="assets/destinations.webp" width="1400" height="1040" alt="Outpost’s destination map showing estimated countries and traffic totals." loading="lazy">
+              </figure>
+            </div>
+          </div>
+          <div class="gallery-tabs" role="tablist" aria-label="Choose a screenshot" hidden>
+            <button id="bandwidth-tab" type="button" role="tab" aria-selected="true" aria-controls="bandwidth-panel">Bandwidth</button>
+            <button id="connections-tab" type="button" role="tab" aria-selected="false" aria-controls="connections-panel" tabindex="-1">Connections</button>
+            <button id="destinations-tab" type="button" role="tab" aria-selected="false" aria-controls="destinations-panel" tabindex="-1">Destination map</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="wrap feature-layout">
+        <div class="feature-intro">
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">From a glance to the details.</h2>
+          <p>Check live transfer rates in the menu bar. Open the app to see the connections behind them.</p>
+        </div>
+        <dl class="feature-list">
+          <div>
+            <dt>Active connections</dt>
+            <dd>See TCP and UDP connections grouped by app and process. Inspect destinations, protocols, and open socket counts.</dd>
+          </div>
+          <div>
+            <dt>Bandwidth history</dt>
+            <dd>Review upload and download totals over time. Find top destinations, view estimated countries, and export the data as CSV.</dd>
+          </div>
+          <div>
+            <dt>Network usage and quotas</dt>
+            <dd>Track Wi-Fi and Ethernet usage and set monthly quotas for a network or across all networks.</dd>
+          </div>
+          <div>
+            <dt>Opened ports</dt>
+            <dd>See which processes own listening ports and which ports are reachable only on your Mac.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="requirements" class="requirements" aria-labelledby="requirements-title">
+      <div class="wrap">
+        <div class="download-card">
+          <div class="download-copy">
+            <p class="eyebrow">Requirements</p>
+            <h2 id="requirements-title">Outpost for Mac</h2>
+            <p>Requires macOS 15 or later. Runs on Apple silicon and Intel Macs. Recorded bandwidth history stays on your Mac.</p>
+            <a class="button button-primary" href="https://github.com/chunyang-wen/Outpost.app/releases">View releases</a>
+          </div>
+          <div class="download-art" aria-hidden="true">
+            <img src="assets/outpost.png" alt="" width="256" height="256" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="./" aria-label="Outpost home">
+        <img src="assets/outpost.png" alt="" width="34" height="34" loading="lazy">
+        <span>Outpost</span>
+      </a>
+      <a href="https://github.com/chunyang-wen/Outpost.app">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
